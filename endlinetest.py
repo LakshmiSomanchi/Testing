@@ -145,8 +145,8 @@ try:
     
     # Define your Airtable table names
     # Ensure these match the table names you set up in Airtable!
-    SUBMISSIONS_TABLE_NAME = "Submissions" # Main table for each completed survey
-    RESPONSES_TABLE_NAME = "Responses"     # Table for individual question answers
+    SUBMISSIONS_TABLE_NAME = "Submissions_Test" # Main table for each completed survey
+    RESPONSES_TABLE_NAME = "Responses_Test"     # Table for individual question answers
     
     submissions_table = Table(API_KEY, BASE_ID, SUBMISSIONS_TABLE_NAME)
     responses_table = Table(API_KEY, BASE_ID, RESPONSES_TABLE_NAME)
