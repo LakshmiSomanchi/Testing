@@ -372,7 +372,7 @@ elif st.session_state["step"] == len(section_keys) + 2:
                         # 1. Prepare main submission record for the 'Submissions' table
                         # Extract key identification fields for the main submission record
                         main_submission_data = {
-                            "Name of the respondent": final_responses.get("Identification-Identification-Name of the respondent", ""),
+                            "Respondent Name": final_responses.get("Identification-Identification-Name of the respondent", ""),
                             "Respondent Email ID": final_responses.get("Identification-Identification-Respondent Email ID", ""),
                             "BMC/ MCC Name": final_responses.get("Identification-Identification-BMC/ MCC Name", ""),
                             "Date of response": str(final_responses.get("Identification-Identification-Date of response", date.today()))
