@@ -391,7 +391,7 @@ elif st.session_state["step"] == len(section_keys) + 2:
 
                                 # Create a record for each question/answer pair
                                 record = {
-                                    "Submission": [submission_airtable_id], # Link to the main submission
+                                    "Submissions_Test": [submission_airtable_id], # Link to the main submission
                                     "Question": key, # The full question key as stored in your `responses` dict
                                     "Answer": answer_str
                                 }
