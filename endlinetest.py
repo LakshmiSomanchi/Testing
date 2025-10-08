@@ -375,7 +375,7 @@ elif st.session_state["step"] == len(section_keys) + 2:
                             "Respondent Name": final_responses.get("Identification-Identification-Name of the respondent", ""),
                             "Respondent Email ID": final_responses.get("Identification-Identification-Respondent Email ID", ""),
                             "BMC/ MCC Name": final_responses.get("Identification-Identification-BMC/ MCC Name", ""),
-                            "Date of response": str(final_responses.get("Identification-Identification-Date of response", date.today()))
+                            #"Date of response": str(final_responses.get("Identification-Identification-Date of response", date.today()))
                             # Add any other top-level identification fields you want in the main Submissions table
                         }
                         created_submission = submissions_table.create(main_submission_data)
